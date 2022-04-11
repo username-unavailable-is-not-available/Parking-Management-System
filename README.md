@@ -1,8 +1,7 @@
 Project Title
 - 
-Parking Management Sytem
+Parking Management System
 
--
 Group Members
 -
 1. Yeasin Elahi, 19-39872-1
