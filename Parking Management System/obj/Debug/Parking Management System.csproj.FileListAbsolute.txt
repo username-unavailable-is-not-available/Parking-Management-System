@@ -1,0 +1,10 @@
+F:\C#\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe.config
+F:\C#\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe
+F:\C#\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.pdb
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.AssemblyReference.cache
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.LoginPage.resources
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.Properties.Resources.resources
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.GenerateResource.cache
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.CoreCompileInputs.cache
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb
