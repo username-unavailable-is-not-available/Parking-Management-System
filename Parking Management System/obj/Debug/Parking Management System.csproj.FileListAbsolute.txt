@@ -8,3 +8,13 @@ F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Mana
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.CoreCompileInputs.cache
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe.config
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.pdb
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.AssemblyReference.cache
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.LoginPage.resources
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.Properties.Resources.resources
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.GenerateResource.cache
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.CoreCompileInputs.cache
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb
