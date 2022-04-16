@@ -8,3 +8,4 @@ F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Mana
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.CoreCompileInputs.cache
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb
+F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.EmployeeDashBoard.resources
