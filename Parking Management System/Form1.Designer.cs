@@ -54,11 +54,15 @@ namespace Parking_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(31, 195);
+=======
+            this.label1.Location = new System.Drawing.Point(67, 233);
+>>>>>>> 4b80fd303edc05c8aa8ba1ec6ba9c97789faca04
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "UserName:";
+            this.label1.Text = "UserID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textusername
@@ -75,9 +79,9 @@ namespace Parking_Management_System
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.Location = new System.Drawing.Point(31, 236);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(65, 13);
+            this.Password.Size = new System.Drawing.Size(61, 13);
             this.Password.TabIndex = 3;
-            this.Password.Text = "Password:";
+            this.Password.Text = "Password";
             this.Password.Click += new System.EventHandler(this.Password_Click);
             // 
             // textBox1
@@ -93,7 +97,12 @@ namespace Parking_Management_System
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(101, 350);
+=======
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(110, 330);
+>>>>>>> 4b80fd303edc05c8aa8ba1ec6ba9c97789faca04
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 30);
             this.button1.TabIndex = 5;
