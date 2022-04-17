@@ -53,11 +53,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(31, 195);
-=======
-            this.label1.Location = new System.Drawing.Point(67, 233);
->>>>>>> 4b80fd303edc05c8aa8ba1ec6ba9c97789faca04
+            this.label1.Location = new System.Drawing.Point(31, 197);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
@@ -96,12 +92,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(101, 350);
-=======
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(110, 330);
->>>>>>> 4b80fd303edc05c8aa8ba1ec6ba9c97789faca04
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 30);
             this.button1.TabIndex = 5;
@@ -123,9 +114,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 285);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Role:";
+            this.label2.Text = "Role";
             // 
             // LoginPage
             // 
