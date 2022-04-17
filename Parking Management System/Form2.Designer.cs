@@ -99,6 +99,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label6);
@@ -193,6 +194,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.label8);
