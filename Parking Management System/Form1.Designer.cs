@@ -1,5 +1,4 @@
-﻿
-namespace Parking_Management_System
+﻿namespace Parking_Management_System
 {
     partial class LoginPage
     {

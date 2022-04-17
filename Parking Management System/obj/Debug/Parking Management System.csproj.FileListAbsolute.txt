@@ -22,3 +22,4 @@ E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management Sy
 E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
 E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb
 >>>>>>> 4b80fd303edc05c8aa8ba1ec6ba9c97789faca04
+E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.EmployeeDashBoard.resources
