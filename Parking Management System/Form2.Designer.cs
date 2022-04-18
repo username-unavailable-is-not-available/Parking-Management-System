@@ -31,6 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,17 +54,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.WorkShift = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -101,6 +101,49 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 201);
             this.panel1.TabIndex = 5;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.textBox7);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Location = new System.Drawing.Point(269, 125);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(128, 56);
+            this.panel5.TabIndex = 12;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(3, 32);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(122, 20);
+            this.textBox7.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(7, 7);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 13);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "PaymentStatus";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(111, 63);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(152, 20);
+            this.textBox6.TabIndex = 11;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(11, 66);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "SlotID";
             // 
             // SearchBox
             // 
@@ -267,49 +310,6 @@
             this.panel4.Size = new System.Drawing.Size(701, 303);
             this.panel4.TabIndex = 7;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "SlotID";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(111, 63);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 20);
-            this.textBox6.TabIndex = 11;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Location = new System.Drawing.Point(269, 125);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(128, 56);
-            this.panel5.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(7, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "PaymentStatus";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(3, 32);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(122, 20);
-            this.textBox7.TabIndex = 13;
-            // 
             // WorkShift
             // 
             this.WorkShift.Location = new System.Drawing.Point(10, 70);
@@ -322,21 +322,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 327);
+            this.ClientSize = new System.Drawing.Size(724, 326);
             this.Controls.Add(this.panel4);
             this.Name = "EmployeeDashBoard";
             this.Text = "Employee Page";
             this.Load += new System.EventHandler(this.EmployeeDashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
