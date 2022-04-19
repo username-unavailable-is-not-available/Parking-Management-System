@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parking_Management_System
 {
-    public partial class EmployeeDashBoard : Form
+    public partial class EmployeePage : Form
     {
-        public EmployeeDashBoard()
+        public EmployeePage()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Parking_Management_System
         private void EmployeeDashBoard_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void eLogoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage lp = new LoginPage();
+            lp.Show();
         }
     }
 }
