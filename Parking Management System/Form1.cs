@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Parking_Management_System
 {
     public partial class LoginPage : Form
     {
+        DataConnection db = new DataConnection();
+
         public LoginPage()
         {
             InitializeComponent();
@@ -20,6 +17,46 @@ namespace Parking_Management_System
         private void LoginPage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (db.connection)
+                {
+                    SqlCommand cmd = new SqlCommand("sp_role_login", db.connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    db.connection.Open();
+                    cmd.Parameters.AddWithValue("@uid", LoginIDBox.Text);
+                    cmd.Parameters.AddWithValue("@upass", LoginPasswordBox.Text);
+                    SqlDataReader rd = cmd.ExecuteReader();
+                    if (rd.HasRows)
+                    {
+                        rd.Read();
+                        if (rd[3].ToString() == "Admin")
+                        {
+                            this.Hide();
+                            AdminPage ap = new AdminPage();
+                            ap.Show();
+                        }
+                        else if (rd[3].ToString() == "Employee")
+                        {
+                            this.Hide();
+                            EmployeePage ep = new EmployeePage();
+                            ep.Show();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error Login");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

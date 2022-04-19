@@ -1,6 +1,6 @@
 ﻿namespace Parking_Management_System
 {
-    partial class EmployeeDashBoard
+    partial class EmployeePage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.eLogoutButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -37,7 +37,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.eSearchButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,9 +47,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.GenerateTokenButton = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.PrintButton = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -72,15 +72,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "EMPLOYEE PAGE";
             // 
-            // button2
+            // eLogoutButton
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(596, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Log Out";
-            this.button2.UseVisualStyleBackColor = true;
+            this.eLogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eLogoutButton.Location = new System.Drawing.Point(602, 3);
+            this.eLogoutButton.Name = "eLogoutButton";
+            this.eLogoutButton.Size = new System.Drawing.Size(96, 23);
+            this.eLogoutButton.TabIndex = 4;
+            this.eLogoutButton.Text = "Log Out";
+            this.eLogoutButton.UseVisualStyleBackColor = true;
+            this.eLogoutButton.Click += new System.EventHandler(this.eLogoutButton_Click);
             // 
             // panel1
             // 
@@ -89,7 +90,7 @@
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.SearchBox);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.eSearchButton);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label5);
@@ -153,14 +154,14 @@
             this.SearchBox.TabIndex = 9;
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button3
+            // eSearchButton
             // 
-            this.button3.Location = new System.Drawing.Point(322, 17);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 20);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = true;
+            this.eSearchButton.Location = new System.Drawing.Point(322, 17);
+            this.eSearchButton.Name = "eSearchButton";
+            this.eSearchButton.Size = new System.Drawing.Size(75, 20);
+            this.eSearchButton.TabIndex = 8;
+            this.eSearchButton.Text = "Search";
+            this.eSearchButton.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -237,22 +238,22 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.GenerateTokenButton);
             this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.PrintButton);
             this.panel3.Location = new System.Drawing.Point(5, 79);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(260, 115);
             this.panel3.TabIndex = 10;
             // 
-            // button4
+            // GenerateTokenButton
             // 
-            this.button4.Location = new System.Drawing.Point(3, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 47);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Generate Token";
-            this.button4.UseVisualStyleBackColor = true;
+            this.GenerateTokenButton.Location = new System.Drawing.Point(3, 10);
+            this.GenerateTokenButton.Name = "GenerateTokenButton";
+            this.GenerateTokenButton.Size = new System.Drawing.Size(120, 47);
+            this.GenerateTokenButton.TabIndex = 14;
+            this.GenerateTokenButton.Text = "Generate Token";
+            this.GenerateTokenButton.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
@@ -262,14 +263,14 @@
             this.textBox5.Size = new System.Drawing.Size(253, 52);
             this.textBox5.TabIndex = 13;
             // 
-            // button5
+            // PrintButton
             // 
-            this.button5.Location = new System.Drawing.Point(137, 10);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 47);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Print";
-            this.button5.UseVisualStyleBackColor = true;
+            this.PrintButton.Location = new System.Drawing.Point(137, 10);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(120, 47);
+            this.PrintButton.TabIndex = 12;
+            this.PrintButton.Text = "Print";
+            this.PrintButton.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -304,7 +305,7 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.eLogoutButton);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(701, 303);
@@ -318,13 +319,16 @@
             this.WorkShift.TabIndex = 13;
             this.WorkShift.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // EmployeeDashBoard
+            // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 326);
             this.Controls.Add(this.panel4);
-            this.Name = "EmployeeDashBoard";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "EmployeePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee Page";
             this.Load += new System.EventHandler(this.EmployeeDashBoard_Load);
             this.panel1.ResumeLayout(false);
@@ -344,7 +348,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button eLogoutButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -354,15 +358,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox SearchBox;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button eSearchButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button GenerateTokenButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
