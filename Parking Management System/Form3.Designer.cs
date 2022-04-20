@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.ShowUserButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -48,36 +49,42 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.aSearchButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.aLogoutButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.SaveButton1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ShowEmployeeButton = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.DeleteButton1 = new System.Windows.Forms.Button();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.SaveButton1 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.DeleteButton1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ShowEmployeeButton = new System.Windows.Forms.Button();
+            this.SlotID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegistrationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Shift = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.aLogoutButton);
@@ -86,23 +93,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(742, 477);
             this.panel1.TabIndex = 1;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(141, 72);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 21;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(7, 75);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Available Free Space";
             // 
             // label11
             // 
@@ -117,15 +107,56 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.dgvUser);
+            this.panel2.Controls.Add(this.ShowUserButton);
+            this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dataGridView2);
-            this.panel2.Controls.Add(this.aSearchButton);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(322, 41);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(417, 430);
             this.panel2.TabIndex = 1;
+            // 
+            // dgvUser
+            // 
+            this.dgvUser.AllowUserToAddRows = false;
+            this.dgvUser.AllowUserToDeleteRows = false;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SlotID,
+            this.UserName,
+            this.VehicleType,
+            this.LicensePlate,
+            this.RegistrationDate,
+            this.PaymentStatus,
+            this.Role});
+            this.dgvUser.Location = new System.Drawing.Point(3, 214);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.ReadOnly = true;
+            this.dgvUser.Size = new System.Drawing.Size(411, 213);
+            this.dgvUser.TabIndex = 25;
+            // 
+            // ShowUserButton
+            // 
+            this.ShowUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowUserButton.Location = new System.Drawing.Point(320, 188);
+            this.ShowUserButton.Name = "ShowUserButton";
+            this.ShowUserButton.Size = new System.Drawing.Size(94, 23);
+            this.ShowUserButton.TabIndex = 24;
+            this.ShowUserButton.Text = "Show User";
+            this.ShowUserButton.UseVisualStyleBackColor = true;
+            this.ShowUserButton.Click += new System.EventHandler(this.ShowUserButton_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(14, 191);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(104, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Search By SlotID";
             // 
             // panel4
             // 
@@ -269,29 +300,9 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "User Info";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 214);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(411, 213);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // aSearchButton
-            // 
-            this.aSearchButton.Location = new System.Drawing.Point(140, 188);
-            this.aSearchButton.Name = "aSearchButton";
-            this.aSearchButton.Size = new System.Drawing.Size(75, 20);
-            this.aSearchButton.TabIndex = 2;
-            this.aSearchButton.Text = "Search";
-            this.aSearchButton.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 188);
+            this.textBox1.Location = new System.Drawing.Point(124, 188);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(109, 20);
             this.textBox1.TabIndex = 1;
@@ -310,115 +321,29 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel3.Controls.Add(this.dgvEmployee);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.ShowEmployeeButton);
             this.panel3.Location = new System.Drawing.Point(3, 141);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(313, 333);
             this.panel3.TabIndex = 1;
             // 
-            // label9
+            // dgvEmployee
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 71);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Shift";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(97, 68);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 22;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(20, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "ID";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 24);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Employee Info";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(97, 42);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 21;
-            // 
-            // SaveButton1
-            // 
-            this.SaveButton1.Location = new System.Drawing.Point(219, 23);
-            this.SaveButton1.Name = "SaveButton1";
-            this.SaveButton1.Size = new System.Drawing.Size(75, 23);
-            this.SaveButton1.TabIndex = 3;
-            this.SaveButton1.Text = "Save";
-            this.SaveButton1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 177);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(307, 153);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // ShowEmployeeButton
-            // 
-            this.ShowEmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowEmployeeButton.Location = new System.Drawing.Point(169, 148);
-            this.ShowEmployeeButton.Name = "ShowEmployeeButton";
-            this.ShowEmployeeButton.Size = new System.Drawing.Size(141, 23);
-            this.ShowEmployeeButton.TabIndex = 0;
-            this.ShowEmployeeButton.Text = "Show Employee";
-            this.ShowEmployeeButton.UseVisualStyleBackColor = true;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(97, 16);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 17;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Name";
-            // 
-            // DeleteButton1
-            // 
-            this.DeleteButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DeleteButton1.Location = new System.Drawing.Point(219, 61);
-            this.DeleteButton1.Name = "DeleteButton1";
-            this.DeleteButton1.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton1.TabIndex = 2;
-            this.DeleteButton1.Text = "Delete";
-            this.DeleteButton1.UseVisualStyleBackColor = true;
+            this.dgvEmployee.AllowUserToAddRows = false;
+            this.dgvEmployee.AllowUserToDeleteRows = false;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EmployeeName,
+            this.UserID,
+            this.Shift});
+            this.dgvEmployee.Location = new System.Drawing.Point(3, 177);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.ReadOnly = true;
+            this.dgvEmployee.Size = new System.Drawing.Size(307, 153);
+            this.dgvEmployee.TabIndex = 26;
             // 
             // panel5
             // 
@@ -434,6 +359,167 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(307, 100);
             this.panel5.TabIndex = 23;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(97, 16);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 71);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Shift";
+            // 
+            // SaveButton1
+            // 
+            this.SaveButton1.Location = new System.Drawing.Point(219, 23);
+            this.SaveButton1.Name = "SaveButton1";
+            this.SaveButton1.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton1.TabIndex = 3;
+            this.SaveButton1.Text = "Save";
+            this.SaveButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(97, 42);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 21;
+            // 
+            // DeleteButton1
+            // 
+            this.DeleteButton1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeleteButton1.Location = new System.Drawing.Point(219, 61);
+            this.DeleteButton1.Name = "DeleteButton1";
+            this.DeleteButton1.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton1.TabIndex = 2;
+            this.DeleteButton1.Text = "Delete";
+            this.DeleteButton1.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(20, 13);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "ID";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(97, 68);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Name";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(144, 24);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Employee Info";
+            // 
+            // ShowEmployeeButton
+            // 
+            this.ShowEmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowEmployeeButton.Location = new System.Drawing.Point(169, 148);
+            this.ShowEmployeeButton.Name = "ShowEmployeeButton";
+            this.ShowEmployeeButton.Size = new System.Drawing.Size(141, 23);
+            this.ShowEmployeeButton.TabIndex = 0;
+            this.ShowEmployeeButton.Text = "Show Employee";
+            this.ShowEmployeeButton.UseVisualStyleBackColor = true;
+            this.ShowEmployeeButton.Click += new System.EventHandler(this.ShowEmployeeButton_Click);
+            // 
+            // SlotID
+            // 
+            this.SlotID.DataPropertyName = "SlotID";
+            this.SlotID.HeaderText = "Slot ID";
+            this.SlotID.Name = "SlotID";
+            this.SlotID.ReadOnly = true;
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "User-Name";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // VehicleType
+            // 
+            this.VehicleType.DataPropertyName = "VehicleType";
+            this.VehicleType.HeaderText = "Vehicle Type";
+            this.VehicleType.Name = "VehicleType";
+            this.VehicleType.ReadOnly = true;
+            // 
+            // LicensePlate
+            // 
+            this.LicensePlate.DataPropertyName = "LicensePlate";
+            this.LicensePlate.HeaderText = "License Plate";
+            this.LicensePlate.Name = "LicensePlate";
+            this.LicensePlate.ReadOnly = true;
+            // 
+            // RegistrationDate
+            // 
+            this.RegistrationDate.DataPropertyName = "RegistrationDate";
+            this.RegistrationDate.HeaderText = "Registration Date";
+            this.RegistrationDate.Name = "RegistrationDate";
+            this.RegistrationDate.ReadOnly = true;
+            // 
+            // PaymentStatus
+            // 
+            this.PaymentStatus.DataPropertyName = "PaymentStatus";
+            this.PaymentStatus.HeaderText = "Payment Status";
+            this.PaymentStatus.Name = "PaymentStatus";
+            this.PaymentStatus.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "Employee-Name";
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.ReadOnly = true;
+            // 
+            // UserID
+            // 
+            this.UserID.DataPropertyName = "UserID";
+            this.UserID.HeaderText = "User ID";
+            this.UserID.Name = "UserID";
+            this.UserID.ReadOnly = true;
+            // 
+            // Shift
+            // 
+            this.Shift.DataPropertyName = "Shift";
+            this.Shift.HeaderText = "Shift";
+            this.Shift.Name = "Shift";
+            this.Shift.ReadOnly = true;
             // 
             // AdminPage
             // 
@@ -451,12 +537,12 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -471,10 +557,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button SaveButton1;
         private System.Windows.Forms.Button DeleteButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button ShowEmployeeButton;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button aSearchButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
@@ -499,8 +582,20 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button ShowUserButton;
+        private System.Windows.Forms.DataGridView dgvUser;
+        private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SlotID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VehicleType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LicensePlate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegistrationDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Shift;
     }
 }

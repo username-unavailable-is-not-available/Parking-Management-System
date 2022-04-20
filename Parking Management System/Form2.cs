@@ -12,6 +12,8 @@ namespace Parking_Management_System
 {
     public partial class EmployeePage : Form
     {
+        Random rnd = new Random();
+
         public EmployeePage()
         {
             InitializeComponent();
@@ -27,6 +29,20 @@ namespace Parking_Management_System
             this.Hide();
             LoginPage lp = new LoginPage();
             lp.Show();
+        }
+
+        private void GenerateTokenButton_Click(object sender, EventArgs e)
+        {
+            TokenListBox.Items.Clear();
+            Random rnd = new Random();
+            TokenListBox.Items.Add(rnd.Next(1, 50));
+            
+        }
+
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+            TokenListBox.Items.Clear();
+            MessageBox.Show("Print Successful");
         }
     }
 }

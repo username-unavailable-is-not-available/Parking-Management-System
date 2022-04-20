@@ -37,7 +37,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
-            this.eSearchButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,13 +47,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.GenerateTokenButton = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.PrintButton = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.WorkShift = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.TokenListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -86,11 +84,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.SearchBox);
-            this.panel1.Controls.Add(this.eSearchButton);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label5);
@@ -148,20 +146,11 @@
             // 
             // SearchBox
             // 
-            this.SearchBox.Location = new System.Drawing.Point(169, 17);
+            this.SearchBox.Location = new System.Drawing.Point(247, 13);
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.Size = new System.Drawing.Size(147, 20);
             this.SearchBox.TabIndex = 9;
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // eSearchButton
-            // 
-            this.eSearchButton.Location = new System.Drawing.Point(322, 17);
-            this.eSearchButton.Name = "eSearchButton";
-            this.eSearchButton.Size = new System.Drawing.Size(75, 20);
-            this.eSearchButton.TabIndex = 8;
-            this.eSearchButton.Text = "Search";
-            this.eSearchButton.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -228,8 +217,6 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(421, 96);
             this.panel2.Name = "panel2";
@@ -238,10 +225,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.TokenListBox);
             this.panel3.Controls.Add(this.GenerateTokenButton);
-            this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.PrintButton);
-            this.panel3.Location = new System.Drawing.Point(5, 79);
+            this.panel3.Location = new System.Drawing.Point(7, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(260, 115);
             this.panel3.TabIndex = 10;
@@ -254,14 +241,7 @@
             this.GenerateTokenButton.TabIndex = 14;
             this.GenerateTokenButton.Text = "Generate Token";
             this.GenerateTokenButton.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(4, 60);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(253, 52);
-            this.textBox5.TabIndex = 13;
+            this.GenerateTokenButton.Click += new System.EventHandler(this.GenerateTokenButton_Click);
             // 
             // PrintButton
             // 
@@ -271,23 +251,7 @@
             this.PrintButton.TabIndex = 12;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(165, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 56);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Available Free Space";
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // label7
             // 
@@ -319,6 +283,26 @@
             this.WorkShift.TabIndex = 13;
             this.WorkShift.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(137, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(104, 13);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Search By SlotID";
+            // 
+            // TokenListBox
+            // 
+            this.TokenListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TokenListBox.FormattingEnabled = true;
+            this.TokenListBox.ItemHeight = 16;
+            this.TokenListBox.Location = new System.Drawing.Point(3, 62);
+            this.TokenListBox.Name = "TokenListBox";
+            this.TokenListBox.Size = new System.Drawing.Size(254, 36);
+            this.TokenListBox.TabIndex = 14;
+            // 
             // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,7 +322,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -358,14 +341,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox SearchBox;
-        private System.Windows.Forms.Button eSearchButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button PrintButton;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button GenerateTokenButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox6;
@@ -374,5 +353,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox WorkShift;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ListBox TokenListBox;
     }
 }
