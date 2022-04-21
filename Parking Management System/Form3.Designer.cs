@@ -32,38 +32,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.ShowUserButton = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.DeleteButton2 = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.SaveButton2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.aLogoutButton = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.SaveButton1 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.DeleteButton1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ShowEmployeeButton = new System.Windows.Forms.Button();
             this.SlotID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VehicleType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,8 +39,45 @@
             this.RegistrationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShowUserButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.VehicleTypeBox = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.PaymentStatusCMB = new System.Windows.Forms.ComboBox();
+            this.RoleCMB = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.RegistrationDateDTP = new System.Windows.Forms.DateTimePicker();
+            this.LicensePlateBox = new System.Windows.Forms.TextBox();
+            this.UserNameBox = new System.Windows.Forms.TextBox();
+            this.SlotIDBox = new System.Windows.Forms.TextBox();
+            this.UserInfoDelete = new System.Windows.Forms.Button();
+            this.UserClearButton = new System.Windows.Forms.Button();
+            this.UserInfoSave = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.UserAutoSearch = new System.Windows.Forms.TextBox();
+            this.aLogoutButton = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.EmployeeNameBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.EmployeeInfoSave = new System.Windows.Forms.Button();
+            this.EmployeeIDBox = new System.Windows.Forms.TextBox();
+            this.EmployeeInfoDelete = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ShowEmployeeButton = new System.Windows.Forms.Button();
+            this.EmployeeClearButton = new System.Windows.Forms.Button();
+            this.ShiftCMB = new System.Windows.Forms.ComboBox();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Shift = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -112,8 +117,8 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(322, 41);
+            this.panel2.Controls.Add(this.UserAutoSearch);
+            this.panel2.Location = new System.Drawing.Point(322, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(417, 430);
             this.panel2.TabIndex = 1;
@@ -136,6 +141,56 @@
             this.dgvUser.ReadOnly = true;
             this.dgvUser.Size = new System.Drawing.Size(411, 213);
             this.dgvUser.TabIndex = 25;
+            this.dgvUser.DoubleClick += new System.EventHandler(this.dgvUser_DoubleClick);
+            // 
+            // SlotID
+            // 
+            this.SlotID.DataPropertyName = "SlotID";
+            this.SlotID.HeaderText = "Slot ID";
+            this.SlotID.Name = "SlotID";
+            this.SlotID.ReadOnly = true;
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "User-Name";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // VehicleType
+            // 
+            this.VehicleType.DataPropertyName = "VehicleType";
+            this.VehicleType.HeaderText = "Vehicle Type";
+            this.VehicleType.Name = "VehicleType";
+            this.VehicleType.ReadOnly = true;
+            // 
+            // LicensePlate
+            // 
+            this.LicensePlate.DataPropertyName = "LicensePlate";
+            this.LicensePlate.HeaderText = "License Plate";
+            this.LicensePlate.Name = "LicensePlate";
+            this.LicensePlate.ReadOnly = true;
+            // 
+            // RegistrationDate
+            // 
+            this.RegistrationDate.DataPropertyName = "RegistrationDate";
+            this.RegistrationDate.HeaderText = "Registration Date";
+            this.RegistrationDate.Name = "RegistrationDate";
+            this.RegistrationDate.ReadOnly = true;
+            // 
+            // PaymentStatus
+            // 
+            this.PaymentStatus.DataPropertyName = "PaymentStatus";
+            this.PaymentStatus.HeaderText = "Payment Status";
+            this.PaymentStatus.Name = "PaymentStatus";
+            this.PaymentStatus.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
             // 
             // ShowUserButton
             // 
@@ -160,14 +215,18 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox5);
-            this.panel4.Controls.Add(this.textBox6);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.DeleteButton2);
-            this.panel4.Controls.Add(this.ClearButton);
-            this.panel4.Controls.Add(this.SaveButton2);
+            this.panel4.Controls.Add(this.VehicleTypeBox);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.PaymentStatusCMB);
+            this.panel4.Controls.Add(this.RoleCMB);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.RegistrationDateDTP);
+            this.panel4.Controls.Add(this.LicensePlateBox);
+            this.panel4.Controls.Add(this.UserNameBox);
+            this.panel4.Controls.Add(this.SlotIDBox);
+            this.panel4.Controls.Add(this.UserInfoDelete);
+            this.panel4.Controls.Add(this.UserClearButton);
+            this.panel4.Controls.Add(this.UserInfoSave);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label2);
@@ -178,67 +237,123 @@
             this.panel4.Size = new System.Drawing.Size(411, 148);
             this.panel4.TabIndex = 18;
             // 
-            // textBox5
+            // VehicleTypeBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(112, 111);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.VehicleTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VehicleTypeBox.FormattingEnabled = true;
+            this.VehicleTypeBox.Items.AddRange(new object[] {
+            "Car",
+            "Bike",
+            "Micro"});
+            this.VehicleTypeBox.Location = new System.Drawing.Point(339, 7);
+            this.VehicleTypeBox.Name = "VehicleTypeBox";
+            this.VehicleTypeBox.Size = new System.Drawing.Size(57, 21);
+            this.VehicleTypeBox.TabIndex = 22;
             // 
-            // textBox6
+            // label14
             // 
-            this.textBox6.Location = new System.Drawing.Point(112, 85);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(237, 40);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(33, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Role";
             // 
-            // textBox4
+            // PaymentStatusCMB
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 59);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.PaymentStatusCMB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PaymentStatusCMB.FormattingEnabled = true;
+            this.PaymentStatusCMB.Items.AddRange(new object[] {
+            "Paid",
+            "Due"});
+            this.PaymentStatusCMB.Location = new System.Drawing.Point(112, 111);
+            this.PaymentStatusCMB.Name = "PaymentStatusCMB";
+            this.PaymentStatusCMB.Size = new System.Drawing.Size(100, 21);
+            this.PaymentStatusCMB.TabIndex = 20;
             // 
-            // textBox3
+            // RoleCMB
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 33);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.RoleCMB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoleCMB.FormattingEnabled = true;
+            this.RoleCMB.Items.AddRange(new object[] {
+            "Student",
+            "Teacher"});
+            this.RoleCMB.Location = new System.Drawing.Point(315, 34);
+            this.RoleCMB.Name = "RoleCMB";
+            this.RoleCMB.Size = new System.Drawing.Size(81, 21);
+            this.RoleCMB.TabIndex = 19;
             // 
-            // textBox2
+            // label12
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(237, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 13);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "Vehicle Type";
             // 
-            // DeleteButton2
+            // RegistrationDateDTP
             // 
-            this.DeleteButton2.Location = new System.Drawing.Point(317, 40);
-            this.DeleteButton2.Name = "DeleteButton2";
-            this.DeleteButton2.Size = new System.Drawing.Size(79, 25);
-            this.DeleteButton2.TabIndex = 15;
-            this.DeleteButton2.Text = "Delete";
-            this.DeleteButton2.UseVisualStyleBackColor = true;
+            this.RegistrationDateDTP.CustomFormat = "yyyy-MM-dd";
+            this.RegistrationDateDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.RegistrationDateDTP.Location = new System.Drawing.Point(112, 85);
+            this.RegistrationDateDTP.Name = "RegistrationDateDTP";
+            this.RegistrationDateDTP.Size = new System.Drawing.Size(100, 20);
+            this.RegistrationDateDTP.TabIndex = 17;
             // 
-            // ClearButton
+            // LicensePlateBox
             // 
-            this.ClearButton.Location = new System.Drawing.Point(240, 102);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(156, 25);
-            this.ClearButton.TabIndex = 16;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.LicensePlateBox.Location = new System.Drawing.Point(112, 59);
+            this.LicensePlateBox.Name = "LicensePlateBox";
+            this.LicensePlateBox.Size = new System.Drawing.Size(100, 20);
+            this.LicensePlateBox.TabIndex = 11;
             // 
-            // SaveButton2
+            // UserNameBox
             // 
-            this.SaveButton2.Location = new System.Drawing.Point(240, 40);
-            this.SaveButton2.Name = "SaveButton2";
-            this.SaveButton2.Size = new System.Drawing.Size(75, 25);
-            this.SaveButton2.TabIndex = 14;
-            this.SaveButton2.Text = "Save";
-            this.SaveButton2.UseVisualStyleBackColor = true;
+            this.UserNameBox.Location = new System.Drawing.Point(112, 33);
+            this.UserNameBox.Name = "UserNameBox";
+            this.UserNameBox.Size = new System.Drawing.Size(100, 20);
+            this.UserNameBox.TabIndex = 10;
+            // 
+            // SlotIDBox
+            // 
+            this.SlotIDBox.Enabled = false;
+            this.SlotIDBox.Location = new System.Drawing.Point(112, 7);
+            this.SlotIDBox.Name = "SlotIDBox";
+            this.SlotIDBox.Size = new System.Drawing.Size(100, 20);
+            this.SlotIDBox.TabIndex = 9;
+            // 
+            // UserInfoDelete
+            // 
+            this.UserInfoDelete.Location = new System.Drawing.Point(317, 76);
+            this.UserInfoDelete.Name = "UserInfoDelete";
+            this.UserInfoDelete.Size = new System.Drawing.Size(79, 25);
+            this.UserInfoDelete.TabIndex = 15;
+            this.UserInfoDelete.Text = "Delete";
+            this.UserInfoDelete.UseVisualStyleBackColor = true;
+            this.UserInfoDelete.Click += new System.EventHandler(this.UserInfoDelete_Click);
+            // 
+            // UserClearButton
+            // 
+            this.UserClearButton.Location = new System.Drawing.Point(240, 107);
+            this.UserClearButton.Name = "UserClearButton";
+            this.UserClearButton.Size = new System.Drawing.Size(156, 25);
+            this.UserClearButton.TabIndex = 16;
+            this.UserClearButton.Text = "Clear";
+            this.UserClearButton.UseVisualStyleBackColor = true;
+            this.UserClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // UserInfoSave
+            // 
+            this.UserInfoSave.Location = new System.Drawing.Point(240, 76);
+            this.UserInfoSave.Name = "UserInfoSave";
+            this.UserInfoSave.Size = new System.Drawing.Size(75, 25);
+            this.UserInfoSave.TabIndex = 14;
+            this.UserInfoSave.Text = "Save";
+            this.UserInfoSave.UseVisualStyleBackColor = true;
+            this.UserInfoSave.Click += new System.EventHandler(this.UserInfoSave_Click);
             // 
             // label5
             // 
@@ -300,12 +415,13 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "User Info";
             // 
-            // textBox1
+            // UserAutoSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 188);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 20);
-            this.textBox1.TabIndex = 1;
+            this.UserAutoSearch.Location = new System.Drawing.Point(124, 188);
+            this.UserAutoSearch.Name = "UserAutoSearch";
+            this.UserAutoSearch.Size = new System.Drawing.Size(109, 20);
+            this.UserAutoSearch.TabIndex = 1;
+            this.UserAutoSearch.TextChanged += new System.EventHandler(this.UserAutoSearch_TextChanged);
             // 
             // aLogoutButton
             // 
@@ -323,6 +439,8 @@
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.dgvEmployee);
             this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.EmployeeInfoSave);
+            this.panel3.Controls.Add(this.EmployeeInfoDelete);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.ShowEmployeeButton);
             this.panel3.Location = new System.Drawing.Point(3, 141);
@@ -336,36 +454,36 @@
             this.dgvEmployee.AllowUserToDeleteRows = false;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.EmployeeName,
             this.UserID,
+            this.EmployeeName,
             this.Shift});
             this.dgvEmployee.Location = new System.Drawing.Point(3, 177);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.ReadOnly = true;
             this.dgvEmployee.Size = new System.Drawing.Size(307, 153);
             this.dgvEmployee.TabIndex = 26;
+            this.dgvEmployee.DoubleClick += new System.EventHandler(this.dgvEmployee_DoubleClick);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox7);
+            this.panel5.Controls.Add(this.ShiftCMB);
+            this.panel5.Controls.Add(this.EmployeeClearButton);
+            this.panel5.Controls.Add(this.EmployeeNameBox);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.SaveButton1);
-            this.panel5.Controls.Add(this.textBox8);
-            this.panel5.Controls.Add(this.DeleteButton1);
+            this.panel5.Controls.Add(this.EmployeeIDBox);
             this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.textBox9);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(3, 36);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(307, 100);
             this.panel5.TabIndex = 23;
             // 
-            // textBox7
+            // EmployeeNameBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(97, 16);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 17;
+            this.EmployeeNameBox.Location = new System.Drawing.Point(97, 16);
+            this.EmployeeNameBox.Name = "EmployeeNameBox";
+            this.EmployeeNameBox.Size = new System.Drawing.Size(100, 20);
+            this.EmployeeNameBox.TabIndex = 17;
             // 
             // label9
             // 
@@ -377,31 +495,33 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Shift";
             // 
-            // SaveButton1
+            // EmployeeInfoSave
             // 
-            this.SaveButton1.Location = new System.Drawing.Point(219, 23);
-            this.SaveButton1.Name = "SaveButton1";
-            this.SaveButton1.Size = new System.Drawing.Size(75, 23);
-            this.SaveButton1.TabIndex = 3;
-            this.SaveButton1.Text = "Save";
-            this.SaveButton1.UseVisualStyleBackColor = true;
+            this.EmployeeInfoSave.Location = new System.Drawing.Point(3, 148);
+            this.EmployeeInfoSave.Name = "EmployeeInfoSave";
+            this.EmployeeInfoSave.Size = new System.Drawing.Size(75, 23);
+            this.EmployeeInfoSave.TabIndex = 3;
+            this.EmployeeInfoSave.Text = "Save";
+            this.EmployeeInfoSave.UseVisualStyleBackColor = true;
+            this.EmployeeInfoSave.Click += new System.EventHandler(this.EmployeeInfoSave_Click);
             // 
-            // textBox8
+            // EmployeeIDBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(97, 42);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 21;
+            this.EmployeeIDBox.Location = new System.Drawing.Point(97, 42);
+            this.EmployeeIDBox.Name = "EmployeeIDBox";
+            this.EmployeeIDBox.Size = new System.Drawing.Size(100, 20);
+            this.EmployeeIDBox.TabIndex = 21;
             // 
-            // DeleteButton1
+            // EmployeeInfoDelete
             // 
-            this.DeleteButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DeleteButton1.Location = new System.Drawing.Point(219, 61);
-            this.DeleteButton1.Name = "DeleteButton1";
-            this.DeleteButton1.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton1.TabIndex = 2;
-            this.DeleteButton1.Text = "Delete";
-            this.DeleteButton1.UseVisualStyleBackColor = true;
+            this.EmployeeInfoDelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.EmployeeInfoDelete.Location = new System.Drawing.Point(84, 148);
+            this.EmployeeInfoDelete.Name = "EmployeeInfoDelete";
+            this.EmployeeInfoDelete.Size = new System.Drawing.Size(75, 23);
+            this.EmployeeInfoDelete.TabIndex = 2;
+            this.EmployeeInfoDelete.Text = "Delete";
+            this.EmployeeInfoDelete.UseVisualStyleBackColor = true;
+            this.EmployeeInfoDelete.Click += new System.EventHandler(this.EmployeeInfoDelete_Click);
             // 
             // label8
             // 
@@ -412,13 +532,6 @@
             this.label8.Size = new System.Drawing.Size(20, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "ID";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(97, 68);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 22;
             // 
             // label7
             // 
@@ -451,61 +564,27 @@
             this.ShowEmployeeButton.UseVisualStyleBackColor = true;
             this.ShowEmployeeButton.Click += new System.EventHandler(this.ShowEmployeeButton_Click);
             // 
-            // SlotID
+            // EmployeeClearButton
             // 
-            this.SlotID.DataPropertyName = "SlotID";
-            this.SlotID.HeaderText = "Slot ID";
-            this.SlotID.Name = "SlotID";
-            this.SlotID.ReadOnly = true;
+            this.EmployeeClearButton.Location = new System.Drawing.Point(201, 25);
+            this.EmployeeClearButton.Name = "EmployeeClearButton";
+            this.EmployeeClearButton.Size = new System.Drawing.Size(103, 53);
+            this.EmployeeClearButton.TabIndex = 27;
+            this.EmployeeClearButton.Text = "Clear";
+            this.EmployeeClearButton.UseVisualStyleBackColor = true;
+            this.EmployeeClearButton.Click += new System.EventHandler(this.EmployeeClearButton_Click);
             // 
-            // UserName
+            // ShiftCMB
             // 
-            this.UserName.DataPropertyName = "UserName";
-            this.UserName.HeaderText = "User-Name";
-            this.UserName.Name = "UserName";
-            this.UserName.ReadOnly = true;
-            // 
-            // VehicleType
-            // 
-            this.VehicleType.DataPropertyName = "VehicleType";
-            this.VehicleType.HeaderText = "Vehicle Type";
-            this.VehicleType.Name = "VehicleType";
-            this.VehicleType.ReadOnly = true;
-            // 
-            // LicensePlate
-            // 
-            this.LicensePlate.DataPropertyName = "LicensePlate";
-            this.LicensePlate.HeaderText = "License Plate";
-            this.LicensePlate.Name = "LicensePlate";
-            this.LicensePlate.ReadOnly = true;
-            // 
-            // RegistrationDate
-            // 
-            this.RegistrationDate.DataPropertyName = "RegistrationDate";
-            this.RegistrationDate.HeaderText = "Registration Date";
-            this.RegistrationDate.Name = "RegistrationDate";
-            this.RegistrationDate.ReadOnly = true;
-            // 
-            // PaymentStatus
-            // 
-            this.PaymentStatus.DataPropertyName = "PaymentStatus";
-            this.PaymentStatus.HeaderText = "Payment Status";
-            this.PaymentStatus.Name = "PaymentStatus";
-            this.PaymentStatus.ReadOnly = true;
-            // 
-            // Role
-            // 
-            this.Role.DataPropertyName = "Role";
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            this.Role.ReadOnly = true;
-            // 
-            // EmployeeName
-            // 
-            this.EmployeeName.DataPropertyName = "EmployeeName";
-            this.EmployeeName.HeaderText = "Employee-Name";
-            this.EmployeeName.Name = "EmployeeName";
-            this.EmployeeName.ReadOnly = true;
+            this.ShiftCMB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ShiftCMB.FormattingEnabled = true;
+            this.ShiftCMB.Items.AddRange(new object[] {
+            "Day",
+            "Night"});
+            this.ShiftCMB.Location = new System.Drawing.Point(97, 68);
+            this.ShiftCMB.Name = "ShiftCMB";
+            this.ShiftCMB.Size = new System.Drawing.Size(100, 21);
+            this.ShiftCMB.TabIndex = 23;
             // 
             // UserID
             // 
@@ -513,6 +592,13 @@
             this.UserID.HeaderText = "User ID";
             this.UserID.Name = "UserID";
             this.UserID.ReadOnly = true;
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "Employee-Name";
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.ReadOnly = true;
             // 
             // Shift
             // 
@@ -555,27 +641,24 @@
         private System.Windows.Forms.Button aLogoutButton;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button SaveButton1;
-        private System.Windows.Forms.Button DeleteButton1;
+        private System.Windows.Forms.Button EmployeeInfoSave;
+        private System.Windows.Forms.Button EmployeeInfoDelete;
         private System.Windows.Forms.Button ShowEmployeeButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UserAutoSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.Button DeleteButton2;
-        private System.Windows.Forms.Button SaveButton2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button UserClearButton;
+        private System.Windows.Forms.Button UserInfoDelete;
+        private System.Windows.Forms.Button UserInfoSave;
+        private System.Windows.Forms.TextBox LicensePlateBox;
+        private System.Windows.Forms.TextBox UserNameBox;
+        private System.Windows.Forms.TextBox SlotIDBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox EmployeeNameBox;
+        private System.Windows.Forms.TextBox EmployeeIDBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
@@ -594,8 +677,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RegistrationDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
+        private System.Windows.Forms.ComboBox PaymentStatusCMB;
+        private System.Windows.Forms.ComboBox RoleCMB;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker RegistrationDateDTP;
+        private System.Windows.Forms.ComboBox VehicleTypeBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button EmployeeClearButton;
+        private System.Windows.Forms.ComboBox ShiftCMB;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Shift;
     }
 }

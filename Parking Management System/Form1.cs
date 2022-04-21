@@ -27,7 +27,6 @@ namespace Parking_Management_System
                 {
                     SqlCommand cmd = new SqlCommand("sp_role_login", db.connection);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    db.connection.Open();
                     cmd.Parameters.AddWithValue("@uid", LoginIDBox.Text);
                     cmd.Parameters.AddWithValue("@upass", LoginPasswordBox.Text);
                     SqlDataReader rd = cmd.ExecuteReader();

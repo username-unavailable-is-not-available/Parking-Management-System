@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
@@ -36,7 +31,8 @@ namespace Parking_Management_System
 
         public DataConnection()
         {
-            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["pmsDB"].ConnectionString);
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["pmsDB2"].ConnectionString);
+            connection.Open();
         }
 
         private void QueryText(string query)

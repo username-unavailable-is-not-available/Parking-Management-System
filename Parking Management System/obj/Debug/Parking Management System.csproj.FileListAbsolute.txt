@@ -26,3 +26,15 @@ E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management Sy
 F:\C#\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.AdminPage.resources
 E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.AdminPage.resources
 E:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.EmployeePage.resources
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe.config
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.exe
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\bin\Debug\Parking_Management_System.pdb
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.AssemblyReference.cache
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.LoginPage.resources
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.EmployeePage.resources
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.AdminPage.resources
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.Properties.Resources.resources
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.GenerateResource.cache
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking Management System.csproj.CoreCompileInputs.cache
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.exe
+I:\College\OOP-2 [Spring, 21-22]\Parking-Management-System\Parking Management System\obj\Debug\Parking_Management_System.pdb

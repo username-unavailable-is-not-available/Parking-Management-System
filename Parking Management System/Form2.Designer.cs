@@ -31,30 +31,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.eLogoutButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.edgvUser = new System.Windows.Forms.DataGridView();
+            this.label13 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.TokenListBox = new System.Windows.Forms.ListBox();
             this.GenerateTokenButton = new System.Windows.Forms.Button();
-            this.PrintButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.WorkShift = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.TokenListBox = new System.Windows.Forms.ListBox();
+            this.eSlotIDBox = new System.Windows.Forms.TextBox();
+            this.ShowUserButton = new System.Windows.Forms.Button();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LicencePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edgvUser)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,73 +79,51 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.ShowUserButton);
+            this.panel1.Controls.Add(this.eSlotIDBox);
+            this.panel1.Controls.Add(this.edgvUser);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.SearchBox);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(10, 96);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 201);
             this.panel1.TabIndex = 5;
             // 
-            // panel5
+            // edgvUser
             // 
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Location = new System.Drawing.Point(269, 125);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(128, 56);
-            this.panel5.TabIndex = 12;
+            this.edgvUser.AllowUserToAddRows = false;
+            this.edgvUser.AllowUserToDeleteRows = false;
+            this.edgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.edgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserName,
+            this.LicencePlate,
+            this.PaymentStatus,
+            this.Role});
+            this.edgvUser.Location = new System.Drawing.Point(3, 72);
+            this.edgvUser.Name = "edgvUser";
+            this.edgvUser.ReadOnly = true;
+            this.edgvUser.Size = new System.Drawing.Size(396, 129);
+            this.edgvUser.TabIndex = 19;
             // 
-            // textBox7
+            // label13
             // 
-            this.textBox7.Location = new System.Drawing.Point(3, 32);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(122, 20);
-            this.textBox7.TabIndex = 13;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(7, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 13);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "PaymentStatus";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(111, 63);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 20);
-            this.textBox6.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "SlotID";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(137, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(104, 13);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Search By SlotID";
             // 
             // SearchBox
             // 
-            this.SearchBox.Location = new System.Drawing.Point(247, 13);
+            this.SearchBox.Location = new System.Drawing.Point(252, 13);
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.Size = new System.Drawing.Size(147, 20);
             this.SearchBox.TabIndex = 9;
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
             // 
             // label6
             // 
@@ -161,57 +134,6 @@
             this.label6.Size = new System.Drawing.Size(65, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "USER";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(111, 162);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(152, 20);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 12);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Registration Date";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(111, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "License";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(111, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Name";
             // 
             // panel2
             // 
@@ -227,31 +149,30 @@
             // 
             this.panel3.Controls.Add(this.TokenListBox);
             this.panel3.Controls.Add(this.GenerateTokenButton);
-            this.panel3.Controls.Add(this.PrintButton);
             this.panel3.Location = new System.Drawing.Point(7, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(260, 115);
             this.panel3.TabIndex = 10;
             // 
+            // TokenListBox
+            // 
+            this.TokenListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TokenListBox.FormattingEnabled = true;
+            this.TokenListBox.ItemHeight = 25;
+            this.TokenListBox.Location = new System.Drawing.Point(54, 83);
+            this.TokenListBox.Name = "TokenListBox";
+            this.TokenListBox.Size = new System.Drawing.Size(154, 29);
+            this.TokenListBox.TabIndex = 14;
+            // 
             // GenerateTokenButton
             // 
-            this.GenerateTokenButton.Location = new System.Drawing.Point(3, 10);
+            this.GenerateTokenButton.Location = new System.Drawing.Point(3, 9);
             this.GenerateTokenButton.Name = "GenerateTokenButton";
-            this.GenerateTokenButton.Size = new System.Drawing.Size(120, 47);
+            this.GenerateTokenButton.Size = new System.Drawing.Size(254, 68);
             this.GenerateTokenButton.TabIndex = 14;
             this.GenerateTokenButton.Text = "Generate Token";
             this.GenerateTokenButton.UseVisualStyleBackColor = true;
             this.GenerateTokenButton.Click += new System.EventHandler(this.GenerateTokenButton_Click);
-            // 
-            // PrintButton
-            // 
-            this.PrintButton.Location = new System.Drawing.Point(137, 10);
-            this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(120, 47);
-            this.PrintButton.TabIndex = 12;
-            this.PrintButton.Text = "Print";
-            this.PrintButton.UseVisualStyleBackColor = true;
-            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // label7
             // 
@@ -283,25 +204,52 @@
             this.WorkShift.TabIndex = 13;
             this.WorkShift.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label13
+            // eSlotIDBox
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(137, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 13);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "Search By SlotID";
+            this.eSlotIDBox.Enabled = false;
+            this.eSlotIDBox.Location = new System.Drawing.Point(3, 46);
+            this.eSlotIDBox.Name = "eSlotIDBox";
+            this.eSlotIDBox.Size = new System.Drawing.Size(100, 20);
+            this.eSlotIDBox.TabIndex = 20;
             // 
-            // TokenListBox
+            // ShowUserButton
             // 
-            this.TokenListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TokenListBox.FormattingEnabled = true;
-            this.TokenListBox.ItemHeight = 16;
-            this.TokenListBox.Location = new System.Drawing.Point(3, 62);
-            this.TokenListBox.Name = "TokenListBox";
-            this.TokenListBox.Size = new System.Drawing.Size(254, 36);
-            this.TokenListBox.TabIndex = 14;
+            this.ShowUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowUserButton.Location = new System.Drawing.Point(305, 46);
+            this.ShowUserButton.Name = "ShowUserButton";
+            this.ShowUserButton.Size = new System.Drawing.Size(94, 23);
+            this.ShowUserButton.TabIndex = 25;
+            this.ShowUserButton.Text = "Show User";
+            this.ShowUserButton.UseVisualStyleBackColor = true;
+            this.ShowUserButton.Click += new System.EventHandler(this.ShowUserButton_Click);
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "User-Name";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // LicencePlate
+            // 
+            this.LicencePlate.DataPropertyName = "LicensePlate";
+            this.LicencePlate.HeaderText = "License Plate";
+            this.LicencePlate.Name = "LicencePlate";
+            this.LicencePlate.ReadOnly = true;
+            // 
+            // PaymentStatus
+            // 
+            this.PaymentStatus.DataPropertyName = "PaymentStatus";
+            this.PaymentStatus.HeaderText = "Payment Status";
+            this.PaymentStatus.Name = "PaymentStatus";
+            this.PaymentStatus.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
             // 
             // EmployeePage
             // 
@@ -317,8 +265,7 @@
             this.Load += new System.EventHandler(this.EmployeeDashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.edgvUser)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -334,26 +281,21 @@
         private System.Windows.Forms.Button eLogoutButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox SearchBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.Button GenerateTokenButton;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox WorkShift;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListBox TokenListBox;
+        private System.Windows.Forms.DataGridView edgvUser;
+        private System.Windows.Forms.TextBox eSlotIDBox;
+        private System.Windows.Forms.Button ShowUserButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LicencePlate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
     }
 }
