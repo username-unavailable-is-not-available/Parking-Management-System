@@ -48,15 +48,15 @@ namespace Parking_Management_System
 
         }
 
-        private void SearchBox_TextChanged(object sender, EventArgs e)
-        {
-            var sql = "select * from NewUserTable WHERE SlotID='" + (this.eSlotIDBox.Text) + "'; ";
-            this.PopulateGridView(sql);
-        }
-
         private void ShowUserButton_Click(object sender, EventArgs e)
         {
             PopulateGridView();
+        }
+
+        private void SeaB_Click(object sender, EventArgs e)
+        {
+            var sql = "select * from NewUserTable WHERE SlotID like " + this.SearchBox.Text + "; ";
+            this.PopulateGridView(sql);
         }
     }
 }

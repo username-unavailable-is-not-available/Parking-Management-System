@@ -27,19 +27,19 @@ namespace Parking_Management_System
                 {
                     SqlCommand cmd = new SqlCommand("sp_role_login", db.connection);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@uid", LoginIDBox.Text);
+                    cmd.Parameters.AddWithValue("@uname", LoginIDBox.Text);
                     cmd.Parameters.AddWithValue("@upass", LoginPasswordBox.Text);
                     SqlDataReader rd = cmd.ExecuteReader();
                     if (rd.HasRows)
                     {
                         rd.Read();
-                        if (rd[3].ToString() == "Admin")
+                        if (rd[4].ToString() == "Admin")
                         {
                             this.Hide();
                             AdminPage ap = new AdminPage();
                             ap.Show();
                         }
-                        else if (rd[3].ToString() == "Employee")
+                        else if (rd[4].ToString() == "Employee")
                         {
                             this.Hide();
                             EmployeePage ep = new EmployeePage();

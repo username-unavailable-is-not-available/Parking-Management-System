@@ -31,7 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.eLogoutButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SeaB = new System.Windows.Forms.Button();
+            this.ShowUserButton = new System.Windows.Forms.Button();
             this.edgvUser = new System.Windows.Forms.DataGridView();
+            this.SlotID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LicencePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -41,13 +48,6 @@
             this.GenerateTokenButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.WorkShift = new System.Windows.Forms.TextBox();
-            this.eSlotIDBox = new System.Windows.Forms.TextBox();
-            this.ShowUserButton = new System.Windows.Forms.Button();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LicencePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edgvUser)).BeginInit();
             this.panel2.SuspendLayout();
@@ -79,8 +79,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.SeaB);
             this.panel1.Controls.Add(this.ShowUserButton);
-            this.panel1.Controls.Add(this.eSlotIDBox);
             this.panel1.Controls.Add(this.edgvUser);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.SearchBox);
@@ -90,12 +90,34 @@
             this.panel1.Size = new System.Drawing.Size(402, 201);
             this.panel1.TabIndex = 5;
             // 
+            // SeaB
+            // 
+            this.SeaB.Location = new System.Drawing.Point(310, 13);
+            this.SeaB.Name = "SeaB";
+            this.SeaB.Size = new System.Drawing.Size(89, 23);
+            this.SeaB.TabIndex = 26;
+            this.SeaB.Text = "Search";
+            this.SeaB.UseVisualStyleBackColor = true;
+            this.SeaB.Click += new System.EventHandler(this.SeaB_Click);
+            // 
+            // ShowUserButton
+            // 
+            this.ShowUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowUserButton.Location = new System.Drawing.Point(305, 46);
+            this.ShowUserButton.Name = "ShowUserButton";
+            this.ShowUserButton.Size = new System.Drawing.Size(94, 23);
+            this.ShowUserButton.TabIndex = 25;
+            this.ShowUserButton.Text = "Show User";
+            this.ShowUserButton.UseVisualStyleBackColor = true;
+            this.ShowUserButton.Click += new System.EventHandler(this.ShowUserButton_Click);
+            // 
             // edgvUser
             // 
             this.edgvUser.AllowUserToAddRows = false;
             this.edgvUser.AllowUserToDeleteRows = false;
             this.edgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.edgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SlotID,
             this.UserName,
             this.LicencePlate,
             this.PaymentStatus,
@@ -105,6 +127,42 @@
             this.edgvUser.ReadOnly = true;
             this.edgvUser.Size = new System.Drawing.Size(396, 129);
             this.edgvUser.TabIndex = 19;
+            // 
+            // SlotID
+            // 
+            this.SlotID.DataPropertyName = "SlotID";
+            this.SlotID.HeaderText = "Slot ID";
+            this.SlotID.Name = "SlotID";
+            this.SlotID.ReadOnly = true;
+            this.SlotID.Visible = false;
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "User-Name";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // LicencePlate
+            // 
+            this.LicencePlate.DataPropertyName = "LicensePlate";
+            this.LicencePlate.HeaderText = "License Plate";
+            this.LicencePlate.Name = "LicencePlate";
+            this.LicencePlate.ReadOnly = true;
+            // 
+            // PaymentStatus
+            // 
+            this.PaymentStatus.DataPropertyName = "PaymentStatus";
+            this.PaymentStatus.HeaderText = "Payment Status";
+            this.PaymentStatus.Name = "PaymentStatus";
+            this.PaymentStatus.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
             // 
             // label13
             // 
@@ -120,10 +178,9 @@
             // 
             this.SearchBox.Location = new System.Drawing.Point(252, 13);
             this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(147, 20);
+            this.SearchBox.Size = new System.Drawing.Size(52, 20);
             this.SearchBox.TabIndex = 9;
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
             // 
             // label6
             // 
@@ -186,7 +243,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.WorkShift);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.panel1);
@@ -195,61 +251,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(701, 303);
             this.panel4.TabIndex = 7;
-            // 
-            // WorkShift
-            // 
-            this.WorkShift.Location = new System.Drawing.Point(10, 70);
-            this.WorkShift.Name = "WorkShift";
-            this.WorkShift.Size = new System.Drawing.Size(101, 20);
-            this.WorkShift.TabIndex = 13;
-            this.WorkShift.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // eSlotIDBox
-            // 
-            this.eSlotIDBox.Enabled = false;
-            this.eSlotIDBox.Location = new System.Drawing.Point(3, 46);
-            this.eSlotIDBox.Name = "eSlotIDBox";
-            this.eSlotIDBox.Size = new System.Drawing.Size(100, 20);
-            this.eSlotIDBox.TabIndex = 20;
-            // 
-            // ShowUserButton
-            // 
-            this.ShowUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowUserButton.Location = new System.Drawing.Point(305, 46);
-            this.ShowUserButton.Name = "ShowUserButton";
-            this.ShowUserButton.Size = new System.Drawing.Size(94, 23);
-            this.ShowUserButton.TabIndex = 25;
-            this.ShowUserButton.Text = "Show User";
-            this.ShowUserButton.UseVisualStyleBackColor = true;
-            this.ShowUserButton.Click += new System.EventHandler(this.ShowUserButton_Click);
-            // 
-            // UserName
-            // 
-            this.UserName.DataPropertyName = "UserName";
-            this.UserName.HeaderText = "User-Name";
-            this.UserName.Name = "UserName";
-            this.UserName.ReadOnly = true;
-            // 
-            // LicencePlate
-            // 
-            this.LicencePlate.DataPropertyName = "LicensePlate";
-            this.LicencePlate.HeaderText = "License Plate";
-            this.LicencePlate.Name = "LicencePlate";
-            this.LicencePlate.ReadOnly = true;
-            // 
-            // PaymentStatus
-            // 
-            this.PaymentStatus.DataPropertyName = "PaymentStatus";
-            this.PaymentStatus.HeaderText = "Payment Status";
-            this.PaymentStatus.Name = "PaymentStatus";
-            this.PaymentStatus.ReadOnly = true;
-            // 
-            // Role
-            // 
-            this.Role.DataPropertyName = "Role";
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            this.Role.ReadOnly = true;
             // 
             // EmployeePage
             // 
@@ -287,15 +288,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button GenerateTokenButton;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox WorkShift;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListBox TokenListBox;
         private System.Windows.Forms.DataGridView edgvUser;
-        private System.Windows.Forms.TextBox eSlotIDBox;
         private System.Windows.Forms.Button ShowUserButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SlotID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn LicencePlate;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.Button SeaB;
     }
 }
