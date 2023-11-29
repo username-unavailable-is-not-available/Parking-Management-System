@@ -13,8 +13,8 @@
 #           #
 #############
 
-./Parking_Management/bin/
-./Parking_Management/obj/
+Parking_Management/bin/
+Parking_Management/obj/
 
 #############
 #           #
