@@ -1,0 +1,10 @@
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\bin\Debug\Parking_Management.exe.config
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\bin\Debug\Parking_Management.exe
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\bin\Debug\Parking_Management.pdb
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.csproj.AssemblyReference.cache
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.csproj.SuggestedBindingRedirects.cache
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.Properties.Resources.resources
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.csproj.GenerateResource.cache
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.csproj.CoreCompileInputs.cache
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.exe
+D:\yeasIn\Documents\Code\Rider\Parking_Management\Parking_Management\obj\Debug\Parking_Management.pdb

@@ -1,0 +1,25 @@
+#############
+#           #
+#    IDE    #
+#           #
+#############
+
+.idea
+.vs
+
+#############
+#           #
+#   Build   #
+#           #
+#############
+
+./Parking_Management/bin
+./Parking_Management/obj
+
+#############
+#           #
+#   Misc.   #
+#           #
+#############
+
+Parking_Management.sln.DotSettings.user
